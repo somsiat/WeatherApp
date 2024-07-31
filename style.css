@@ -12,14 +12,18 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgb(48, 189, 107);
+    background:url('img/background.webp');
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
     position: relative;
     width: 400px;
-    height: 555px;
-    background-color: white;
+    height: 100px;
+    background:rgba(255, 255, 255, .1);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 20px;
     padding: 20px;
 }
@@ -95,4 +99,51 @@ body {
     position: absolute;
     font-size: 20;
     margin-left: 4px;   
+}
+
+.weather-details {
+    display: flex;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.weather-details .humidity, 
+.weather-details .wind {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.weather-details .humidity {
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+
+.weather-details .wind {
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+
+.weather-details i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.weather-details span { 
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 450; 
+}
+
+.weather-details p {
+    font-size: 10px;
+    font-weight: 450;
+}
+
+.weather-box, 
+.weather-details {
+    visibility: hidden;
 }
