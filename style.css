@@ -19,8 +19,8 @@ body {
 
 .container {
     position: relative;
-    width: 400px;
-    height: 100px;
+    width: 500px;
+    height: auto;
     background:rgba(255, 255, 255, .1);
     backdrop-filter: blur(30px);
     border: 2px solid rgba(255, 255, 255, .2);
@@ -55,18 +55,18 @@ body {
 
 .search-box input::placeholder {
     color: black;
-    text-transform: capitalize;
+    text-transform:none;
 
 }
 
 .search-box button {
     position: absolute;
     right: 0;
-    width: 35px;
+    width: 45px;
     height: 100%;
     border: none;
     outline: none;
-    font-size: 20px;
+    font-size: 25px;
     background: transparent;
     padding: 0 30px 0 5px;
 }
@@ -79,11 +79,11 @@ body {
 
 .weather-box {
     text-align: center;
-    margin: 30px 0;
+    margin: 100px 0;
 }
 
 .weather-box img {
-    width: 60%;
+    width: 50%;
     
 }
 
@@ -111,25 +111,30 @@ body {
 }
 
 .weather-details .humidity, 
-.weather-details .wind {
+.weather-details .wind,
+.weather-details .pressure {
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 60%;
 }
 
 .weather-details .humidity {
-    padding-left: 20px;
+    padding-left: 10px;
     justify-content: flex-start;
 }
 
 .weather-details .wind {
-    padding-right: 20px;
+    justify-content: center;
+}
+
+.weather-details .pressure {
+    padding-right: 10px;
     justify-content: flex-end;
 }
 
 .weather-details i {
     font-size: 30px;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .weather-details span { 
@@ -139,11 +144,10 @@ body {
 }
 
 .weather-details p {
-    font-size: 10px;
-    font-weight: 450;
+    font-size: 13px;
+    font-weight: 500;
 }
 
-.weather-box, 
 .weather-details {
     visibility: hidden;
 }
