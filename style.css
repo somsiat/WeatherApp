@@ -49,13 +49,13 @@ body {
     font-size: 21px;
     color: black;
     font-weight: 470;
-    text-transform: uppercase;
+    text-transform:capitalize;
     padding: 0 30px 0 30px;
 }
 
 .search-box input::placeholder {
     color: black;
-    text-transform:none;
+    text-transform:capitalize;
 
 }
 
